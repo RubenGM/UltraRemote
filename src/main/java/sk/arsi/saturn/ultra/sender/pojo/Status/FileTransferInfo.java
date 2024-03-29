@@ -15,10 +15,17 @@
  */
 package sk.arsi.saturn.ultra.sender.pojo.Status;
 
+import com.google.gson.annotations.SerializedName;
+
 public class FileTransferInfo {
+    @SerializedName("Status")
     public int status;
+    @SerializedName("DownloadOffset")
     public int downloadOffset;
+    @SerializedName("CheckOffset")
     public int checkOffset;
+    @SerializedName("FileTotalSize")
     public int fileTotalSize;
+    @SerializedName("Filename")
     public String filename;
 }

@@ -15,12 +15,21 @@
  */
 package sk.arsi.saturn.ultra.sender.pojo.Status;
 
+import com.google.gson.annotations.SerializedName;
+
 public class PrintInfo {
+    @SerializedName("Status")
     public int status;
+    @SerializedName("CurrentLayer")
     public int currentLayer;
+    @SerializedName("TotalLayer")
     public int totalLayer;
+    @SerializedName("CurrentTicks")
     public int currentTicks;
+    @SerializedName("TotalTicks")
     public int totalTicks;
+    @SerializedName("ErrorNumber")
     public int errorNumber;
+    @SerializedName("Filename")
     public String filename;
 }
